@@ -46,7 +46,7 @@ class Key extends Component {
       touched: true
     })
 
-    this.props.onPlayNoteInput(this.props.midiNumber);
+    this.props.onPlayNoteInput(MidiNumbers.midiToNoteName(this.props.midiNumber), this.props.midiNumber);
   };
 
   onStopNoteInput = () => {
@@ -55,7 +55,7 @@ class Key extends Component {
       touched: false
     })
 
-    this.props.onStopNoteInput(this.props.midiNumber);
+    this.props.onStopNoteInput(MidiNumbers.midiToNoteName(this.props.midiNumber), this.props.midiNumber);
   };
 
   // Key position is represented by the number of natural key widths from the left
