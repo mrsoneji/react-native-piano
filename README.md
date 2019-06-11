@@ -1,4 +1,4 @@
-# react-native-piano [![npm](https://img.shields.io/npm/v/@mrsoneji/react-native-piano.svg?style=flat-square)](https://www.npmjs.com/package/@mrsoneji/react-native-piano)
+# react-native-piano [![npm](https://img.shields.io/npm/v/react-native-piano.svg?style=flat-square)](https://www.npmjs.com/package/react-native-piano)
 
 <img width="600" src="/public/images/react-native-piano-screenshot.png" alt="react-native-piano screenshot" />
 
