@@ -1,0 +1,30 @@
+{
+  "name": "react-native-piano",
+  "version": "1.0.0",
+  "description": "An interactive piano component based on http://www.kevinqi.com/react-piano/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsoneji/react-native-piano.git"
+  },
+  "keywords": [
+    "piano"
+  ],
+  "author": "René Sebastián Pucheta <sebastian.pucheta@gmail.com> (https://github.com/mrsoneji/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrsoneji/react-native-piano/issues"
+  },
+  "homepage": "https://github.com/mrsoneji/react-native-piano#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "just-range": "^2.1.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.54.1"
+  }
+}
