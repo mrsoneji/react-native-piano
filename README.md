@@ -26,7 +26,7 @@ import { Piano } from 'react-native-piano'
 
 | Prop | Type | Description |
 | :------------ |:---------------:| :---------------:|
-| noteRange | **Required** `object` | An object representing the range of notes to render. Format `{ first: 48, last: 77 }` in which first and last corresponds to natural notes. |
+| noteRange | **Required** `object` | An object representing the range of notes to render. Format `{ first: 'c4', last: 'e5' }` in which first and last corresponds to natural notes. |
 | onPlayNoteInput | `function` | Function that fires whenever a play-note event is fired. |
 | onStopNoteInput | `function` | Function that fires whenever a stop-note event is fired. |
 

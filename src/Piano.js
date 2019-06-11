@@ -10,10 +10,29 @@ import Key from './Key'
 import MidiNumbers from './MidiNumbers'
 
 class Piano extends Component {
+  state = {
+    noteRange: {
+      first: MidiNumbers.fromNote('c4'),
+      last: MidiNumbers.fromNote('e5')
+    }
+  }
+
   static propTypes = {
     onPlayNoteInput: PropTypes.func.isRequired,
     onStopNoteInput: PropTypes.func.isRequired
   };
+
+  componentDidMount() {
+    const { noteRange } = this.props
+
+    this.setState({
+      ...this.state,
+      noteRange: {
+        first: MidiNumbers.fromNote(noteRange.first),
+        last: MidiNumbers.fromNote(noteRange.last)
+      }
+    })
+  }
 
   getNaturalKeyCount() {
     return this.getMidiNumbers().filter((number) => {
@@ -37,7 +56,7 @@ class Piano extends Component {
   }
 
   getMidiNumbers() {
-    return range(this.props.noteRange.first, this.props.noteRange.last + 1);
+    return range(this.state.noteRange.first, this.state.noteRange.last + 1);
   }
 
   getNaturalKeyWidth() {
@@ -55,7 +74,7 @@ class Piano extends Component {
               <Key
                 naturalKeyWidth={ naturalKeyWidth }
                 midiNumber={ midiNumber }
-                noteRange={ this.props.noteRange }
+                noteRange={ this.state.noteRange }
                 accidental={ isAccidental }
                 onPlayNoteInput={ this.props.onPlayNoteInput }
                 onStopNoteInput={ this.props.onStopNoteInput }
