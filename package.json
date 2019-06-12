@@ -1,6 +1,6 @@
 {
   "name": "react-native-piano",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An interactive piano component based on http://www.kevinqi.com/react-piano/",
   "main": "index.js",
   "scripts": {
